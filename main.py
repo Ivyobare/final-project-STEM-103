@@ -22,9 +22,6 @@ order_total = place_order(list, order_total, order)
 tip = int(input("Would you like to include a tip on the order? If yes enter amout: "))
 total_withtip = order_total + tip
 
-
-
-
 #print receipt
 yes = True
 input("Would you like a printed receipt?")

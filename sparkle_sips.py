@@ -1,5 +1,8 @@
 
 
+from webbrowser import Elinks
+
+
 def legal_age():   
         try:
           age = int(input("Please enter your age: "))
@@ -40,14 +43,13 @@ def place_order(drinks):
    for i, drink in enumerate(drinks):
       print(f"{i +1 }.{drink['name']}- ${drink['price']}")
 
-  
 while True:
+                                         
      try:
           choice = input("Enter the number of choice of drink you want: (and 'X' TO EXIT): ")
-
           if choice == 'X':
               print("Exiting order")
-
+              break
           choice = int(choice) - 1
           if 0 <= choice < len(drinks):
            num_drinks = int(input("Enter the number of {drinks[choice]['name']}"))
