@@ -41,7 +41,7 @@ def place_order(drinks):
       print(f"{i +1 }.{drink['name']}- ${drink['price']}")
 
   
-    while True:
+while True:
      try:
           choice = input("Enter the number of choice of drink you want: (and 'X' TO EXIT): ")
 
